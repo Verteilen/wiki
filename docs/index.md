@@ -4,8 +4,8 @@ Verteilen is a cluster computing application which provide friendly user interfa
 
 ## Application info
 
-* Platform Support: Windows/Linux
+* Platform Support: Windows / Linux
 * Programming Language: Typescript
-* Framework: Electron, Vue, Vuetify
+* Framework: NodeJS, Electron, Vue, Vuetify
+* Script Language: JS
 * Author: Elly
-* Script: JS

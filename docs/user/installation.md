@@ -4,12 +4,12 @@
 
 Which you do not need to install anything, you can just click [here](https://verteilen.github.io/.github/) to use it
 
-The problem is that because there is no backend attach to it, so it will lack alot of feature for it
+The problem is that because there is no backend attach to it, so it will lack alot of feature for it <br />
 And the server will shutdown when user close the browser
 
-## Node Install
+## Compute Node Install
 
-Install the nodejs module in the global for compute node\
+Install the nodejs module in the global for compute node <br />
 use npm install the compute tool node
 
 ```bash
@@ -19,12 +19,12 @@ verteilen_node
 ```
 
 
-## Desktop App
+## Desktop App Install
 
 In [Release](https://github.com/Verteilen/Verteilen/releases) page
 
-* For windows user click .msi installation file, 
-* For linux user click .deb installation file
+* For windows user click **.msi** installation file
+* For linux user click **.deb** installation file
 
 ## Docker Install
 

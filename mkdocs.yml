@@ -15,6 +15,7 @@ nav:
     - Console: user/console.md
     - Plugin: user/plugin.md
     - Server: user/server.md
+    - Example: user/example.md
   - Dev Guide:
     - Installation: dev/installation.md
     - Structure: dev/structure.md

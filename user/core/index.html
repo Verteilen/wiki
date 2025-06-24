@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#core" class="md-skip">
+        <a href="#concept" class="md-skip">
           Skip to content
         </a>
       
@@ -314,6 +314,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Core
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -325,6 +338,34 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#use-blender-for-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Blender For Example
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -606,6 +647,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dev/build_pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Build Pipeline
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -633,6 +697,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#use-blender-for-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Blender For Example
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -650,7 +731,17 @@
   
 
 
-<h1 id="core">Core</h1>
+<h1 id="concept">Concept</h1>
+<p>Let say for example, you have 5 power computers, And a project so big which require days to finish its works <br />
+Such as 3D Rendering, or Video transcoding, or Large data sorting.</p>
+<p>Sure, You can keep vertical scaling, until it's too expensive to do it. when you hit the critical point. <br />
+You might considering horizontal scaling, which now you need a way to manage multiple computers</p>
+<h2 id="use-blender-for-example">Use Blender For Example</h2>
+<p>Let say there is a video file needs to export to mp4 file, video length is near 1 hour and the scene contain VFX or fluid computing</p>
+<p>In this case you can seperate the render to multiple fragment, 5 mins per .mp4 file <br />
+In the end, you output folder will contain multiple videos</p>
+<p>During the renderering, you can tell multiple computers to render different timespan <br />
+Then combine them in the end</p>
 
 
 

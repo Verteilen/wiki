@@ -341,18 +341,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#node-install" class="md-nav__link">
+  <a href="#compute-node-install" class="md-nav__link">
     <span class="md-ellipsis">
-      Node Install
+      Compute Node Install
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#desktop-app" class="md-nav__link">
+  <a href="#desktop-app-install" class="md-nav__link">
     <span class="md-ellipsis">
-      Desktop App
+      Desktop App Install
     </span>
   </a>
   
@@ -674,6 +674,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dev/build_pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Build Pipeline
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -717,18 +740,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#node-install" class="md-nav__link">
+  <a href="#compute-node-install" class="md-nav__link">
     <span class="md-ellipsis">
-      Node Install
+      Compute Node Install
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#desktop-app" class="md-nav__link">
+  <a href="#desktop-app-install" class="md-nav__link">
     <span class="md-ellipsis">
-      Desktop App
+      Desktop App Install
     </span>
   </a>
   
@@ -765,28 +788,41 @@
 <h1 id="installation">Installation</h1>
 <h2 id="static-web">Static Web</h2>
 <p>Which you do not need to install anything, you can just click <a href="https://verteilen.github.io/.github/">here</a> to use it</p>
-<p>The problem is that because there is no backend attach to it, so it will lack alot of feature for it
-And the server will shutdown when user close the browser</p>
-<h2 id="node-install">Node Install</h2>
-<p>Install the nodejs module in the global for compute node\
+<div class="admonition info">
+<p class="admonition-title">No Advanced Features</p>
+<p>Static Web mode means there is no backend attach to it <br />
+It will only contain core feature</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Browser Cannot Close</p>
+<p>You cannot close browser, before your task finish <br />
+All the compute node will disconnect, because all the websocket instance is hold in the browser code</p>
+</div>
+<h2 id="compute-node-install">Compute Node Install</h2>
+<p>Install the nodejs module in the global for compute node <br />
 use npm install the compute tool node</p>
-<pre><code class="language-bash">npm install -g verteilen_node
-# use command ctn to start the client
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>verteilen_node
+<span class="c1"># use command ctn to start the client</span>
 verteilen_node
-</code></pre>
-<h2 id="desktop-app">Desktop App</h2>
+</code></pre></div>
+<div class="admonition node">
+<p class="admonition-title">First time running</p>
+<p>If you're running verteilen_node the first time <br />
+It will trying to download the worker executable first</p>
+</div>
+<h2 id="desktop-app-install">Desktop App Install</h2>
 <p>In <a href="https://github.com/Verteilen/Verteilen/releases">Release</a> page</p>
 <ul>
-<li>For windows user click .msi installation file, </li>
-<li>For linux user click .deb installation file</li>
+<li>For windows user click <strong>.msi</strong> installation file</li>
+<li>For linux user click <strong>.deb</strong> installation file</li>
 </ul>
 <h2 id="docker-install">Docker Install</h2>
 <p>Here is the quick deploy for compute node docker container</p>
-<pre><code class="language-bash">docker run --restart=always -p 12080:12080 --name verteilen_node0 e87870823/verteilen_node
-</code></pre>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>--restart<span class="o">=</span>always<span class="w"> </span>-p<span class="w"> </span><span class="m">12080</span>:12080<span class="w"> </span>--name<span class="w"> </span>verteilen_node0<span class="w"> </span>e87870823/verteilen_node
+</code></pre></div>
 <p>Here is the quick deploy for compute server docker container</p>
-<pre><code class="language-bash">docker run --restart=always -p 11080:11080 -p 11777:11777 --name verteilen_server0 e87870823/verteilen_server
-</code></pre>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>--restart<span class="o">=</span>always<span class="w"> </span>-p<span class="w"> </span><span class="m">11080</span>:11080<span class="w"> </span>-p<span class="w"> </span><span class="m">11777</span>:11777<span class="w"> </span>--name<span class="w"> </span>verteilen_server0<span class="w"> </span>e87870823/verteilen_server
+</code></pre></div>
 
 
 

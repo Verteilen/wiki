@@ -4,19 +4,28 @@
 
 Which you do not need to install anything, you can just click [here](https://verteilen.github.io/.github/) to use it
 
-The problem is that because there is no backend attach to it, so it will lack alot of feature for it <br />
-And the server will shutdown when user close the browser
+!!! info "No Advanced Features"
+    Static Web mode means there is no backend attach to it <br />
+    It will only contain core feature
+
+!!! warning "Browser Cannot Close"
+    You cannot close browser, before your task finish <br />
+    All the compute node will disconnect, because all the websocket instance is hold in the browser code
 
 ## Compute Node Install
 
 Install the nodejs module in the global for compute node <br />
 use npm install the compute tool node
 
+
 ```bash
 npm install -g verteilen_node
 # use command ctn to start the client
 verteilen_node
 ```
+!!! node "First time running"
+    If you're running verteilen_node the first time <br />
+    It will trying to download the worker executable first
 
 
 ## Desktop App Install

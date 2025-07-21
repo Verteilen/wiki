@@ -16,7 +16,7 @@ bun dev
 
 After the build is setup, you can use below commands to do sort of things
 
-## Actions
+## Quick Dev Actions
 
 Open electron debug mode with Hot reload
 

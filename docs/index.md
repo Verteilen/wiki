@@ -1,5 +1,7 @@
 # Welcome Verteilen Documentation
 
+<img style="width:35%" src="./static/icon.png" />
+
 Verteilen is a cluster computing application which provide friendly user interface to control with
 
 ## Application info

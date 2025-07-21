@@ -89,8 +89,8 @@ Notices:
 !!! info "Source code path location"
     It's locate at src/renderer
 
-!!! message "Build program"
-    Use command below to package the program to executable file
+!!! message "Build html"
+    Use command below to use vite package the renderer to html files
     ```bash
     # Output html files
     npm run build:web
@@ -109,6 +109,20 @@ Notices:
     Frontend locate at src/renderer
     Backend locate at src/main
 
+!!! message "Build electron"
+    Use command below to package the electron app to installation files
+    ```bash
+    # Build electron app depend on current os
+    npm run build
+    # Build electron app which run on windows (.msi)
+    npm run build:win
+    # Build electron app which run on mac
+    npm run build:mac
+    # Build electron app which run on linux (.deb)
+    npm run build:linux
+    ```
+    The output will locate at ./dist folder
+
 ### Express Server
 
 Notices:
@@ -123,8 +137,26 @@ It's nodejs express server which hosting the backend
     Frontend locate at src/renderer
     Backend locate at src/server
 
+!!! message "Build express"
+    Use command below to package the express to nodejs deploy files
+    ```bash
+    # Output nodejs files
+    npm run build:server
+    ```
+    The output will locate at ./build/server folder
+
 ### Compute Node
+
+It's the client side application, it recevied server signal and do the calculation then return the info etc... <br />
+It runs without user interface
 
 !!! info "Source code path location"
     It's locate at src/node
 
+!!! message "Build node"
+    Use command below to package the express to nodejs deploy files
+    ```bash
+    # Output nodejs files
+    npm run build:node
+    ```
+    The output will locate at ./build/node folder

@@ -1,9 +1,16 @@
 # Workflow
 
-Let's just put this image here for overview <br />
 This is the entire project content, which contain several layers
 
-![Workflow](./../static/Workflow.drawio.png)
+```mermaid
+---
+title: Overview
+---
+flowchart LR
+    A[Project] -.->|1| B[Parameter]
+    A -->|N| C[Task]
+    C -->|N| D[Job]
+```
 
 ## Project
 
@@ -16,12 +23,32 @@ A project can have multiple task <br />
 Every task can have different flags <br />
 Currently Verteilen support 3 flags
 
+* No Flags
 * Setup
 * Cluster
 * Multithread
 
 !!! note "No Flag Scenario"
     The backend will pick only one compute node, and run the task, then it will mark it as finish
+
+```mermaid
+---
+title: scenario
+---
+flowchart LR
+    Z[Task] --> Z0{No Flags}
+    Z[Task] --> Z1{Setup}
+    Z[Task] --> Z2{Cluster}
+    Z[Task] --> Z3{Multithread}
+    Z0 -->|Generate| A0[1 x Subtask]
+    Z1 -->|Generate| A1[1 x Subtask]
+    Z2 -->|Generate| A2[(N x Subtasks)]
+    Z3 -->|Generate| A3[(N x Subtasks)]
+    A0 --> B0(One Node Run Once)
+    A1 --> B1(All Node Run Once)
+    A2 --> B2(Run by Node Pool)
+    A3 --> B3(Run by Node Pool <br />Run 2+ subtask at one node)
+```
 
 #### Setup
 

@@ -10,8 +10,8 @@ nav:
     - Workflow: user/workflow.md
     - Project: user/project.md
     - Task: user/task.md
-    - Job: user/job.md
     - Parameter: user/parameter.md
+    - Job: user/job.md
     - Console: user/console.md
     - Plugin: user/plugin.md
     - Server: user/server.md

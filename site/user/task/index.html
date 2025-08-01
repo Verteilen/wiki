@@ -14,7 +14,7 @@
         <link rel="prev" href="../project/">
       
       
-        <link rel="next" href="../job/">
+        <link rel="next" href="../parameter/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -383,6 +383,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Task
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -395,29 +408,52 @@
 
       </a>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../job/" class="md-nav__link">
         
-  
-  
-  <span class="md-ellipsis">
-    Job
-    
-  </span>
-  
 
-      </a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-new-task" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add New Task
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#binding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binding
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -436,6 +472,29 @@
   
   <span class="md-ellipsis">
     Parameter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../job/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Job
     
   </span>
   
@@ -679,6 +738,41 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-new-task" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add New Task
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#binding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binding
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -697,7 +791,58 @@
 
 
 <h1 id="task">Task</h1>
-<p><img alt="GIF" src="static/task.gif" /></p>
+<h2 id="overview">Overview</h2>
+<p>The task page location</p>
+<p><img style="width:25%" src="./../../static/TaskPage.png" /></p>
+<p>Toolbar layout</p>
+<p><img style="width:100%" src="./../../static/TaskPage2.png" /></p>
+<h2 id="add-new-task">Add New Task</h2>
+<p>Click button to add task</p>
+<p><img style="width:100%" src="./../../static/AddTask.png" /></p>
+<p>As you can see, you must enter the name, otherwise the menu will not accept</p>
+<p><img style="width:50%" src="./../../static/AddTask2.png" /></p>
+<p><img style="width:50%" src="./../../static/AddTask3.png" /></p>
+<p>You can choose it to be setup job type <br />
+Which it's the task run in every nodes once</p>
+<p><img style="width:50%" src="./../../static/AddTask4.png" /></p>
+<p>Or you can choose distribute, which let this be a cronjob type <br />
+It will generate a number of subtask that use every nodes to finish it</p>
+<div class="admonition warning">
+<p class="admonition-title">Execute Order</p>
+<p>No It does not have order like, first node run first job, second node run second job <br />
+As long as the node finish the current subtask, it will fetch the next unfinish subtask <br />
+It run as quickly as possible</p>
+</div>
+<p><img style="width:50%" src="./../../static/AddTask5.png" />
+<img style="width:50%" src="./../../static/AddTask6.png" /></p>
+<p>With multicore checked, One node can have multiple subtask execute at the same time</p>
+<div class="admonition warning">
+<p class="admonition-title">Compute Heavy</p>
+<p>If your task have cpu or gpu heavy compute task <br />
+We recommand you not to check this <br />
+It should be use on the lightweight task such as transcoding or formating json etc...</p>
+</div>
+<p><img style="width:50%" src="./../../static/AddTask7.png" /></p>
+<p>New update </p>
+<ul>
+<li>Decide that the display should change to single row, It's eaiser to read</li>
+</ul>
+<p><img style="width:50%" src="./../../static/AddTask8.png" /></p>
+<h2 id="binding">Binding</h2>
+<p>It's a project binding parameter, It's just a default binding to a data vault <br />
+You can actually leave this empty, You can assign it in the console page as well</p>
+<ul>
+<li>Click green text to jump to parameter setting menu <br /></li>
+<li>Click dotted box to select other parameter</li>
+</ul>
+<p><img style="width:60%" src="./../../static/Binding.png" /></p>
+<ul>
+<li>Click None to unbind</li>
+<li>Click other to change binding</li>
+</ul>
+<p><img style="width:60%" src="./../../static/Binding2.png" /></p>
+<p>This is what you see when project is binding to nothing</p>
+<p><img style="width:60%" src="./../../static/Binding3.png" /></p>
 
 
 

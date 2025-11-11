@@ -1,28 +1,49 @@
 site_name: Verteilen Documentation
-site_url: https://verteilen.github.io/wiki/
+site_url: https://verteilen.github.io/wiki
 repo_name: Verteilen Wiki
 repo_url: https://github.com/Verteilen/wiki
-nav:
-  - Home: index.md
-  - User Guide:
-    - Installation: user/installation.md
-    - Core: user/core.md
-    - Workflow: user/workflow.md
-    - Project: user/project.md
-    - Task: user/task.md
-    - Parameter: user/parameter.md
-    - Job: user/job.md
-    - Console: user/console.md
-    - Plugin: user/plugin.md
-    - Server: user/server.md
-    - Example: user/example.md
-  - Dev Guide:
-    - Installation: dev/installation.md
-    - Structure: dev/structure.md
-    - Core: dev/core.md
+
+extra:
+  version:
+    default: stable
+    provider: mike
+  social:
+    - icon: fontawesome/brands/mastodon 
+      link: https://fosstodon.org/@squidfunk
+
 theme:
   name: material
+  favicon: assets/images/favicon.png
+  font:
+    text: Roboto Mono
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
   user_color_mode_toggle: true
+  features:
+    - tabs
+    - instant
+    - awesome-nav
+    - search
+    - search.suggest
+    - search.highlight
+    - search.share
+    - navigation.footer
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -35,3 +56,21 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+plugins:
+  - search
+  - awesome-nav
+  - i18n:
+      docs_structure: suffix
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: zh-TW
+          name: 繁體中文
+          build: true
+          nav_translations:
+            DEV: 開發人員
+            USER: 用戶指南

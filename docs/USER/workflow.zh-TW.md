@@ -78,6 +78,9 @@ flowchart LR
 
 #### 表達式
 
+目前屬性使用了 [表達式](https://www.npmjs.com/package/expressionparser) NPM 插件進行運算 <br />
+重點是讓不同的情況能得到不同的結果
+
 ## 資料庫
 
 用於運算流程的數據庫 <br />

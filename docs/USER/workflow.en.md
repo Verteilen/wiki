@@ -78,6 +78,9 @@ By the way, Verteilen currently support use Javascript VM to write the logic her
 
 #### Expression
 
+Currently the properties is use [Expression](https://www.npmjs.com/package/expressionparser) NPM package to do the work <br />
+The point of the expression here is to get result base on different scenario
+
 ## Database
 
 The variables which use during the compute stage <br />

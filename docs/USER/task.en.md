@@ -1,5 +1,7 @@
 # Task
 
+A container with multiple jobs definition with flags which effect how node execute them
+
 ## Views
 
 The task page location

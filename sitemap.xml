@@ -2,62 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://verteilen.github.io/wiki/</loc>
-         <lastmod>2025-08-01</lastmod>
+         <lastmod>2025-11-11</lastmod>
+    </url>
+    <url>
+         <loc>https://verteilen.github.io/wiki/api/server/Server/</loc>
+         <lastmod>2025-11-11</lastmod>
+    </url>
+    <url>
+         <loc>https://verteilen.github.io/wiki/api/server/WebServer/</loc>
+         <lastmod>2025-11-11</lastmod>
     </url>
     <url>
          <loc>https://verteilen.github.io/wiki/dev/core/</loc>
-         <lastmod>2025-08-01</lastmod>
+         <lastmod>2025-11-11</lastmod>
     </url>
     <url>
          <loc>https://verteilen.github.io/wiki/dev/installation/</loc>
-         <lastmod>2025-08-01</lastmod>
+         <lastmod>2025-11-11</lastmod>
     </url>
     <url>
          <loc>https://verteilen.github.io/wiki/dev/structure/</loc>
-         <lastmod>2025-08-01</lastmod>
+         <lastmod>2025-11-11</lastmod>
     </url>
     <url>
          <loc>https://verteilen.github.io/wiki/user/console/</loc>
-         <lastmod>2025-08-01</lastmod>
+         <lastmod>2025-11-11</lastmod>
     </url>
     <url>
          <loc>https://verteilen.github.io/wiki/user/core/</loc>
-         <lastmod>2025-08-01</lastmod>
+         <lastmod>2025-11-11</lastmod>
     </url>
     <url>
          <loc>https://verteilen.github.io/wiki/user/example/</loc>
-         <lastmod>2025-08-01</lastmod>
+         <lastmod>2025-11-11</lastmod>
     </url>
     <url>
          <loc>https://verteilen.github.io/wiki/user/installation/</loc>
-         <lastmod>2025-08-01</lastmod>
+         <lastmod>2025-11-11</lastmod>
     </url>
     <url>
          <loc>https://verteilen.github.io/wiki/user/job/</loc>
-         <lastmod>2025-08-01</lastmod>
+         <lastmod>2025-11-11</lastmod>
     </url>
     <url>
          <loc>https://verteilen.github.io/wiki/user/parameter/</loc>
-         <lastmod>2025-08-01</lastmod>
+         <lastmod>2025-11-11</lastmod>
     </url>
     <url>
          <loc>https://verteilen.github.io/wiki/user/plugin/</loc>
-         <lastmod>2025-08-01</lastmod>
+         <lastmod>2025-11-11</lastmod>
     </url>
     <url>
          <loc>https://verteilen.github.io/wiki/user/project/</loc>
-         <lastmod>2025-08-01</lastmod>
+         <lastmod>2025-11-11</lastmod>
     </url>
     <url>
          <loc>https://verteilen.github.io/wiki/user/server/</loc>
-         <lastmod>2025-08-01</lastmod>
+         <lastmod>2025-11-11</lastmod>
     </url>
     <url>
          <loc>https://verteilen.github.io/wiki/user/task/</loc>
-         <lastmod>2025-08-01</lastmod>
+         <lastmod>2025-11-11</lastmod>
     </url>
     <url>
          <loc>https://verteilen.github.io/wiki/user/workflow/</loc>
-         <lastmod>2025-08-01</lastmod>
+         <lastmod>2025-11-11</lastmod>
     </url>
 </urlset>

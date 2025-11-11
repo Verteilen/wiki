@@ -2,51 +2,59 @@
 
 ``` mermaid
 ---
-title: Overview
+title: overview
 ---
 graph LR
-    A{share codebase} -->|copy to| B[Program]
-    A -->|copy to| C[Compute Node]
-    A -->|copy to| D[Web]
-    A -->|copy to| E[Electron]
-    A -->|copy to| F[Express]
+    A{verteilen_core} -->|dependency| B[Program]
+    A -->|dependency| C[Compute Node]
+    A -->|dependency| D[Web]
+    A -->|dependency| E[Electron]
+    A -->|dependency| F[Express]
+    A -->|dependency| K[Cluster]
     B -->|build| G((EXE))
-    G -.->|needs| C
-    G -.->|needs| E
-    G -.->|needs| F
     D -->|build| H((HTML))
     E -->|build| I((msi, deb Files))
     F -->|build| J((NodeJS Files))
+```
+
+<br /><br />
+
+``` mermaid
+---
+title: execute dependency
+---
+graph LR
+    B((EXE))
+    C[Compute Node]
+    E[Electron]
+    F[Express]
+
+    B -.->|dependency| C
+    B -.->|dependency| E
+    B -.->|dependency| F
 ```
 
 ## Share
 
 It's a codebase which share in different application
 
-!!! info "Source code path location"
-    It's locate at src/share
+!!! info "Source code location"
+    It's locate at [Verteilen-Core](https://github.com/Verteilen/Verteilen-Core)
 
-!!! message ""Share" Action"
-    Which start copy the code into different folder
+!!! message ""Update Share" Action"
+    Which update the core library
     ```bash
-    npm run share
+    # It will print out the library version to console
+    npm i verteilen-core && cat package.json | grep core
     ```
-
-!!! warning "Modify Notice"
-    So if you want to modify the core logic<br />
-    You should modify the content in the src/share <br />
-    Example: <br />
-    If you edit the code in src/main/client/.... <br />
-    After share command, your modify action will be gone
 
 ## Worker
 
 The executable program which run the task logic on it.<br />
 This program is called by runner. In order to implement multithread logic in NodeJS environment
 
-!!! info "Source code path location"
-    It's locate at src/program
-    The program entry point is src/program/worker.ts
+!!! info "Source code location"
+    It's locate at [here](https://github.com/Verteilen/worker)
 
 !!! message "Build program"
     Use command below to package the program to executable file
@@ -62,12 +70,6 @@ This program is called by runner. In order to implement multithread logic in Nod
     ```
     The output will locate at ./bin folder
 
-!!! warning "Clean build application warning"
-    If you have multiple executable in the bin folder <br />
-    And you build the electron application or express application <br />
-    They will copy the entire bin folder, which means it will copy the unnecessary files to output <br />
-    <b>Make sure delete bin folder before build any runner application</b>
-
 ## Runner
 
 ### Static Web
@@ -81,8 +83,9 @@ Notices:
 - [ ] Playground
 - [ ] Authentication
 
-!!! info "Source code path location"
-    It's locate at src/renderer
+!!! info "Source code location"
+    It's locate at [Verteilen](https://github.com/Verteilen/Verteilen) <br />
+    Currently official Github page repository is [Here]([Static-Web](https://github.com/Verteilen/.github))
 
 !!! message "Build html"
     Use command below to use vite package the renderer to html files
@@ -101,7 +104,7 @@ Notices:
 - [ ] Authentication
 
 !!! info "Source code path location"
-    Frontend locate at src/renderer
+    Frontend locate at src/renderer <br />
     Backend locate at src/main
 
 !!! message "Build electron"
@@ -155,3 +158,6 @@ It runs without user interface
     npm run build:node
     ```
     The output will locate at ./build/node folder
+
+
+### Cluster

@@ -799,6 +799,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#cluster" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cluster
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1116,6 +1125,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#cluster" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cluster
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1142,48 +1160,51 @@
 
 <h1 id="project-structure">Project Structure</h1>
 <pre class="mermaid"><code>---
-title: Overview
+title: overview
 ---
 graph LR
-    A{share codebase} --&gt;|copy to| B[Program]
-    A --&gt;|copy to| C[Compute Node]
-    A --&gt;|copy to| D[Web]
-    A --&gt;|copy to| E[Electron]
-    A --&gt;|copy to| F[Express]
+    A{verteilen_core} --&gt;|dependency| B[Program]
+    A --&gt;|dependency| C[Compute Node]
+    A --&gt;|dependency| D[Web]
+    A --&gt;|dependency| E[Electron]
+    A --&gt;|dependency| F[Express]
+    A --&gt;|dependency| K[Cluster]
     B --&gt;|build| G((EXE))
-    G -.-&gt;|needs| C
-    G -.-&gt;|needs| E
-    G -.-&gt;|needs| F
     D --&gt;|build| H((HTML))
     E --&gt;|build| I((msi, deb Files))
     F --&gt;|build| J((NodeJS Files))</code></pre>
+<p><br /><br /></p>
+<pre class="mermaid"><code>---
+title: execute dependency
+---
+graph LR
+    B((EXE))
+    C[Compute Node]
+    E[Electron]
+    F[Express]
+
+    B -.-&gt;|dependency| C
+    B -.-&gt;|dependency| E
+    B -.-&gt;|dependency| F</code></pre>
 <h2 id="share">Share</h2>
 <p>It's a codebase which share in different application</p>
 <div class="admonition info">
-<p class="admonition-title">Source code path location</p>
-<p>It's locate at src/share</p>
+<p class="admonition-title">Source code location</p>
+<p>It's locate at <a href="https://github.com/Verteilen/Verteilen-Core">Verteilen-Core</a></p>
 </div>
 <div class="admonition message">
-<p class="admonition-title">"Share" Action</p>
-<p>Which start copy the code into different folder
-<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>run<span class="w"> </span>share
+<p class="admonition-title">"Update Share" Action</p>
+<p>Which update the core library
+<div class="highlight"><pre><span></span><code><span class="c1"># It will print out the library version to console</span>
+npm<span class="w"> </span>i<span class="w"> </span>verteilen-core<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>cat<span class="w"> </span>package.json<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>core
 </code></pre></div></p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Modify Notice</p>
-<p>So if you want to modify the core logic<br />
-You should modify the content in the src/share <br />
-Example: <br />
-If you edit the code in src/main/client/.... <br />
-After share command, your modify action will be gone</p>
 </div>
 <h2 id="worker">Worker</h2>
 <p>The executable program which run the task logic on it.<br />
 This program is called by runner. In order to implement multithread logic in NodeJS environment</p>
 <div class="admonition info">
-<p class="admonition-title">Source code path location</p>
-<p>It's locate at src/program
-The program entry point is src/program/worker.ts</p>
+<p class="admonition-title">Source code location</p>
+<p>It's locate at <a href="https://github.com/Verteilen/worker">here</a></p>
 </div>
 <div class="admonition message">
 <p class="admonition-title">Build program</p>
@@ -1199,13 +1220,6 @@ npm<span class="w"> </span>run<span class="w"> </span>pkg<span class="w"> </span
 </code></pre></div>
 The output will locate at ./bin folder</p>
 </div>
-<div class="admonition warning">
-<p class="admonition-title">Clean build application warning</p>
-<p>If you have multiple executable in the bin folder <br />
-And you build the electron application or express application <br />
-They will copy the entire bin folder, which means it will copy the unnecessary files to output <br />
-<b>Make sure delete bin folder before build any runner application</b></p>
-</div>
 <h2 id="runner">Runner</h2>
 <h3 id="static-web">Static Web</h3>
 <p>Simple task management host by browser, which it close when user close browser <br />
@@ -1217,8 +1231,9 @@ It's unreliable you could said, But easy deploy</p>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Authentication</li>
 </ul>
 <div class="admonition info">
-<p class="admonition-title">Source code path location</p>
-<p>It's locate at src/renderer</p>
+<p class="admonition-title">Source code location</p>
+<p>It's locate at <a href="https://github.com/Verteilen/Verteilen">Verteilen</a> <br />
+Currently official Github page repository is <a href="[Static-Web](https://github.com/Verteilen/.github)">Here</a></p>
 </div>
 <div class="admonition message">
 <p class="admonition-title">Build html</p>
@@ -1237,7 +1252,7 @@ The output will locate at ./build/renderer folder</p>
 </ul>
 <div class="admonition info">
 <p class="admonition-title">Source code path location</p>
-<p>Frontend locate at src/renderer
+<p>Frontend locate at src/renderer <br />
 Backend locate at src/main</p>
 </div>
 <div class="admonition message">
@@ -1290,6 +1305,7 @@ npm<span class="w"> </span>run<span class="w"> </span>build:node
 </code></pre></div>
 The output will locate at ./build/node folder</p>
 </div>
+<h3 id="cluster">Cluster</h3>
 
 
 

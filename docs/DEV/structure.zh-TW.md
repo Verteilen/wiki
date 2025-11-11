@@ -2,75 +2,77 @@
 
 ``` mermaid
 ---
-title: Overview
+title: 大綱
 ---
 graph LR
-    A{share codebase} -->|copy to| B[Program]
-    A -->|copy to| C[Compute Node]
-    A -->|copy to| D[Web]
-    A -->|copy to| E[Electron]
-    A -->|copy to| F[Express]
-    B -->|build| G((EXE))
-    G -.->|needs| C
-    G -.->|needs| E
-    G -.->|needs| F
-    D -->|build| H((HTML))
-    E -->|build| I((msi, deb Files))
-    F -->|build| J((NodeJS Files))
+    A{verteilen_core} -->|依賴於| B[Program]
+    A -->|依賴於| C[Compute Node]
+    A -->|依賴於| D[Web]
+    A -->|依賴於| E[Electron]
+    A -->|依賴於| F[Express]
+    A -->|依賴於| K[Cluster]
+    B -->|建置| G((EXE))
+    D -->|建置| H((HTML))
+    E -->|建置| I((msi, deb Files))
+    F -->|建置| J((NodeJS Files))
 ```
 
-## Share
+<br /><br />
 
-It's a codebase which share in different application
+``` mermaid
+---
+title: 執行依賴
+---
+graph LR
+    B((EXE))
+    C[Compute Node]
+    E[Electron]
+    F[Express]
 
-!!! info "Source code path location"
-    It's locate at src/share
+    B -.->|依賴於| C
+    B -.->|依賴於| E
+    B -.->|依賴於| F
+```
 
-!!! message ""Share" Action"
-    Which start copy the code into different folder
+## 共享
+
+共享到名個專案的腳本
+
+!!! info "原始碼連結"
+    連結附上於 [Verteilen-Core](https://github.com/Verteilen/Verteilen-Core)
+
+!!! message ""更新" 動作"
+    更新核心庫
     ```bash
-    npm run share
+    # 會將下載的核心庫版本打印出來
+    npm i verteilen-core && cat package.json | grep core
     ```
 
-!!! warning "Modify Notice"
-    So if you want to modify the core logic<br />
-    You should modify the content in the src/share <br />
-    Example: <br />
-    If you edit the code in src/main/client/.... <br />
-    After share command, your modify action will be gone
+## 工作者
 
-## Worker
+這個執行檔將會用於流程的運算 <br />
+透過執行者呼叫, 生成 Thread 實體, 爲了在 NodeJS 環境實現多核心
 
-The executable program which run the task logic on it.<br />
-This program is called by runner. In order to implement multithread logic in NodeJS environment
+!!! info "原始碼連結"
+    連結附上於 [here](https://github.com/Verteilen/worker)
 
-!!! info "Source code path location"
-    It's locate at src/program
-    The program entry point is src/program/worker.ts
-
-!!! message "Build program"
-    Use command below to package the program to executable file
+!!! message "建置程式"
+    用以下指令進行打包
     ```bash
-    # Build exe depend on current os
+    # 根據目前作業系統打包
     npm run pkg
-    # Build worker.exe which run on windows
+    # 打包 Window 平台用執行檔
     npm run pkg win
-    # Build worker.exe which run on mac
+    # 打包 MacOS 平台用執行檔
     npm run pkg mac
-    # Build worker.exe which run on linux
+    # 打包 Linux 平台用執行檔
     npm run pkg linux
     ```
-    The output will locate at ./bin folder
+    輸出會在 ./bin 資料夾
 
-!!! warning "Clean build application warning"
-    If you have multiple executable in the bin folder <br />
-    And you build the electron application or express application <br />
-    They will copy the entire bin folder, which means it will copy the unnecessary files to output <br />
-    <b>Make sure delete bin folder before build any runner application</b>
+## 執行者
 
-## Runner
-
-### Static Web
+### 靜態網頁
 
 Simple task management host by browser, which it close when user close browser <br />
 It's unreliable you could said, But easy deploy
@@ -81,8 +83,9 @@ Notices:
 - [ ] Playground
 - [ ] Authentication
 
-!!! info "Source code path location"
-    It's locate at src/renderer
+!!! info "Source code location"
+    It's locate at [Verteilen](https://github.com/Verteilen/Verteilen) <br />
+    Currently official Github page repository is [Here]([Static-Web](https://github.com/Verteilen/.github))
 
 !!! message "Build html"
     Use command below to use vite package the renderer to html files
@@ -101,7 +104,7 @@ Notices:
 - [ ] Authentication
 
 !!! info "Source code path location"
-    Frontend locate at src/renderer
+    Frontend locate at src/renderer <br />
     Backend locate at src/main
 
 !!! message "Build electron"
@@ -155,3 +158,6 @@ It runs without user interface
     npm run build:node
     ```
     The output will locate at ./build/node folder
+
+
+### Cluster

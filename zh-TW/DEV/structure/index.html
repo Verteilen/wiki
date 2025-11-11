@@ -736,37 +736,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#share" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      Share
+      共享
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#worker" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      Worker
+      工作者
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#runner" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      Runner
+      執行者
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Runner">
+    <nav class="md-nav" aria-label="執行者">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#static-web" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      Static Web
+      靜態網頁
     </span>
   </a>
   
@@ -794,6 +794,15 @@
   <a href="#compute-node" class="md-nav__link">
     <span class="md-ellipsis">
       Compute Node
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cluster" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cluster
     </span>
   </a>
   
@@ -1053,37 +1062,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#share" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      Share
+      共享
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#worker" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      Worker
+      工作者
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#runner" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      Runner
+      執行者
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Runner">
+    <nav class="md-nav" aria-label="執行者">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#static-web" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      Static Web
+      靜態網頁
     </span>
   </a>
   
@@ -1116,6 +1125,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#cluster" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cluster
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1142,72 +1160,68 @@
 
 <h1 id="_1">專案結構</h1>
 <pre class="mermaid"><code>---
-title: Overview
+title: 大綱
 ---
 graph LR
-    A{share codebase} --&gt;|copy to| B[Program]
-    A --&gt;|copy to| C[Compute Node]
-    A --&gt;|copy to| D[Web]
-    A --&gt;|copy to| E[Electron]
-    A --&gt;|copy to| F[Express]
-    B --&gt;|build| G((EXE))
-    G -.-&gt;|needs| C
-    G -.-&gt;|needs| E
-    G -.-&gt;|needs| F
-    D --&gt;|build| H((HTML))
-    E --&gt;|build| I((msi, deb Files))
-    F --&gt;|build| J((NodeJS Files))</code></pre>
-<h2 id="share">Share</h2>
-<p>It's a codebase which share in different application</p>
+    A{verteilen_core} --&gt;|依賴於| B[Program]
+    A --&gt;|依賴於| C[Compute Node]
+    A --&gt;|依賴於| D[Web]
+    A --&gt;|依賴於| E[Electron]
+    A --&gt;|依賴於| F[Express]
+    A --&gt;|依賴於| K[Cluster]
+    B --&gt;|建置| G((EXE))
+    D --&gt;|建置| H((HTML))
+    E --&gt;|建置| I((msi, deb Files))
+    F --&gt;|建置| J((NodeJS Files))</code></pre>
+<p><br /><br /></p>
+<pre class="mermaid"><code>---
+title: 執行依賴
+---
+graph LR
+    B((EXE))
+    C[Compute Node]
+    E[Electron]
+    F[Express]
+
+    B -.-&gt;|依賴於| C
+    B -.-&gt;|依賴於| E
+    B -.-&gt;|依賴於| F</code></pre>
+<h2 id="_2">共享</h2>
+<p>共享到名個專案的腳本</p>
 <div class="admonition info">
-<p class="admonition-title">Source code path location</p>
-<p>It's locate at src/share</p>
+<p class="admonition-title">原始碼連結</p>
+<p>連結附上於 <a href="https://github.com/Verteilen/Verteilen-Core">Verteilen-Core</a></p>
 </div>
 <div class="admonition message">
-<p class="admonition-title">"Share" Action</p>
-<p>Which start copy the code into different folder
-<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>run<span class="w"> </span>share
+<p class="admonition-title">"更新" 動作</p>
+<p>更新核心庫
+<div class="highlight"><pre><span></span><code><span class="c1"># 會將下載的核心庫版本打印出來</span>
+npm<span class="w"> </span>i<span class="w"> </span>verteilen-core<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>cat<span class="w"> </span>package.json<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>core
 </code></pre></div></p>
 </div>
-<div class="admonition warning">
-<p class="admonition-title">Modify Notice</p>
-<p>So if you want to modify the core logic<br />
-You should modify the content in the src/share <br />
-Example: <br />
-If you edit the code in src/main/client/.... <br />
-After share command, your modify action will be gone</p>
-</div>
-<h2 id="worker">Worker</h2>
-<p>The executable program which run the task logic on it.<br />
-This program is called by runner. In order to implement multithread logic in NodeJS environment</p>
+<h2 id="_3">工作者</h2>
+<p>這個執行檔將會用於流程的運算 <br />
+透過執行者呼叫, 生成 Thread 實體, 爲了在 NodeJS 環境實現多核心</p>
 <div class="admonition info">
-<p class="admonition-title">Source code path location</p>
-<p>It's locate at src/program
-The program entry point is src/program/worker.ts</p>
+<p class="admonition-title">原始碼連結</p>
+<p>連結附上於 <a href="https://github.com/Verteilen/worker">here</a></p>
 </div>
 <div class="admonition message">
-<p class="admonition-title">Build program</p>
-<p>Use command below to package the program to executable file
-<div class="highlight"><pre><span></span><code><span class="c1"># Build exe depend on current os</span>
+<p class="admonition-title">建置程式</p>
+<p>用以下指令進行打包
+<div class="highlight"><pre><span></span><code><span class="c1"># 根據目前作業系統打包</span>
 npm<span class="w"> </span>run<span class="w"> </span>pkg
-<span class="c1"># Build worker.exe which run on windows</span>
+<span class="c1"># 打包 Window 平台用執行檔</span>
 npm<span class="w"> </span>run<span class="w"> </span>pkg<span class="w"> </span>win
-<span class="c1"># Build worker.exe which run on mac</span>
+<span class="c1"># 打包 MacOS 平台用執行檔</span>
 npm<span class="w"> </span>run<span class="w"> </span>pkg<span class="w"> </span>mac
-<span class="c1"># Build worker.exe which run on linux</span>
+<span class="c1"># 打包 Linux 平台用執行檔</span>
 npm<span class="w"> </span>run<span class="w"> </span>pkg<span class="w"> </span>linux
 </code></pre></div>
-The output will locate at ./bin folder</p>
+輸出會在 ./bin 資料夾</p>
 </div>
-<div class="admonition warning">
-<p class="admonition-title">Clean build application warning</p>
-<p>If you have multiple executable in the bin folder <br />
-And you build the electron application or express application <br />
-They will copy the entire bin folder, which means it will copy the unnecessary files to output <br />
-<b>Make sure delete bin folder before build any runner application</b></p>
-</div>
-<h2 id="runner">Runner</h2>
-<h3 id="static-web">Static Web</h3>
+<h2 id="_4">執行者</h2>
+<h3 id="_5">靜態網頁</h3>
 <p>Simple task management host by browser, which it close when user close browser <br />
 It's unreliable you could said, But easy deploy</p>
 <p>Notices:</p>
@@ -1217,8 +1231,9 @@ It's unreliable you could said, But easy deploy</p>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Authentication</li>
 </ul>
 <div class="admonition info">
-<p class="admonition-title">Source code path location</p>
-<p>It's locate at src/renderer</p>
+<p class="admonition-title">Source code location</p>
+<p>It's locate at <a href="https://github.com/Verteilen/Verteilen">Verteilen</a> <br />
+Currently official Github page repository is <a href="[Static-Web](https://github.com/Verteilen/.github)">Here</a></p>
 </div>
 <div class="admonition message">
 <p class="admonition-title">Build html</p>
@@ -1237,7 +1252,7 @@ The output will locate at ./build/renderer folder</p>
 </ul>
 <div class="admonition info">
 <p class="admonition-title">Source code path location</p>
-<p>Frontend locate at src/renderer
+<p>Frontend locate at src/renderer <br />
 Backend locate at src/main</p>
 </div>
 <div class="admonition message">
@@ -1290,6 +1305,7 @@ npm<span class="w"> </span>run<span class="w"> </span>build:node
 </code></pre></div>
 The output will locate at ./build/node folder</p>
 </div>
+<h3 id="cluster">Cluster</h3>
 
 
 

@@ -11,10 +11,10 @@
         <link rel="canonical" href="https://verteilen.github.io/wiki/DEV/structure/">
       
       
-        <link rel="prev" href="../../USER/console/">
+        <link rel="prev" href="../installation/">
       
       
-        <link rel="next" href="../installation/">
+        <link rel="next" href="../core/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -363,58 +363,58 @@
   
   
     <li class="md-nav__item">
+      <a href="../../USER/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../USER/core/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Core Concept
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../USER/workflow/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     Workflow
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../USER/task/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Task
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../USER/server/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Server
     
   </span>
   
@@ -455,12 +455,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../USER/plugin/" class="md-nav__link">
+      <a href="../../USER/task/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Plugin
+    Task
     
   </span>
   
@@ -478,7 +478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../USER/parameter/" class="md-nav__link">
+      <a href="../../USER/database/" class="md-nav__link">
         
   
   
@@ -524,12 +524,58 @@
   
   
     <li class="md-nav__item">
-      <a href="../../USER/installation/" class="md-nav__link">
+      <a href="../../USER/console/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Installation
+    Console
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../USER/plugin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Plugin
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../USER/server/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Server
     
   </span>
   
@@ -553,52 +599,6 @@
   
   <span class="md-ellipsis">
     Example Template
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../USER/core/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Concept
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../USER/console/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Console
     
   </span>
   
@@ -655,6 +655,29 @@
             DEV
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -785,29 +808,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../installation/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Installation
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -1156,12 +1156,7 @@ graph LR
     G -.-&gt;|needs| F
     D --&gt;|build| H((HTML))
     E --&gt;|build| I((msi, deb Files))
-    F --&gt;|build| J((NodeJS Files))
-    style G fill:#f7d899
-    style H fill:#f7d899
-    style I fill:#f7d899
-    style J fill:#f7d899
-    style A fill:#eccafc</code></pre>
+    F --&gt;|build| J((NodeJS Files))</code></pre>
 <h2 id="share">Share</h2>
 <p>It's a codebase which share in different application</p>
 <div class="admonition info">
@@ -1324,7 +1319,7 @@ The output will locate at ./build/node folder</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../USER/console/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Console">
+          <a href="../installation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Setup">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1334,20 +1329,20 @@ The output will locate at ./build/node folder</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                Console
+                Setup
               </div>
             </div>
           </a>
         
         
           
-          <a href="../installation/" class="md-footer__link md-footer__link--next" aria-label="Next: Installation">
+          <a href="../core/" class="md-footer__link md-footer__link--next" aria-label="Next: Core">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Installation
+                Core
               </div>
             </div>
             <div class="md-footer__button md-icon">

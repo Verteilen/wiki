@@ -4,7 +4,7 @@
 
 Which you do not need to install anything, you can just click [here](https://verteilen.github.io/.github/) to use it
 
-!!! info "No Advanced Features"
+!!! warning "No Advanced Features"
     Static Web mode means there is no backend attach to it <br />
     It will only contain core feature
 
@@ -15,12 +15,11 @@ Which you do not need to install anything, you can just click [here](https://ver
 ## Compute Node Install
 
 Install the nodejs module in the global for compute node <br />
-use npm install the compute tool node
-
 
 ```bash
+# Install
 npm install -g verteilen_node
-# use command ctn to start the client
+# use command to start the client
 verteilen_node
 ```
 !!! node "First time running"
@@ -28,14 +27,30 @@ verteilen_node
     It will trying to download the worker executable first
 
 
+## Cluster Install
+
+## Server Install
+
+Install the nodejs module in the global for compute node <br />
+
+```bash
+# Install
+npm install -g verteilen_server
+# use command to start the server
+verteilen_server
+```
+!!! node "First time running"
+    If you're running verteilen_server the first time <br />
+    It will trying to download the worker executable first
+
 ## Desktop App Install
 
 In [Release](https://github.com/Verteilen/Verteilen/releases) page
 
-* For windows user click **.msi** installation file
-* For linux user click **.deb** installation file
+* Windows user click **.msi** installation file
+* Linux user click **.deb** installation file
 
-## Docker Install
+## Docker Deploy
 
 Here is the quick deploy for compute node docker container
 

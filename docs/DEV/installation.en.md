@@ -1,9 +1,4 @@
-# Installation
-
-You must join the verteilen dev team to access the source code
-
-
-## Setup
+# Setup
 
 User below commands to setup the project folder
 
@@ -28,24 +23,4 @@ Host static web
 
 ```bash
 npm run web
-```
-
-Open express server and hosting it as backend
-
-```bash
-npm run express
-```
-
-Compute node build
-
-```bash
-npm run build:node
-npm run docker:node-f
-```
-
-Compute server build
-
-```bash
-npm run build:server
-npm run docker:server-f
 ```

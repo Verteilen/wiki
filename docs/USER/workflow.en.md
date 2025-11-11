@@ -21,7 +21,7 @@ The project container, you can put name and description in here, just easy to ma
 This probably the most important part, defining tasks <br />
 A project can have multiple task <br />
 Every task can have different flags <br />
-Currently Verteilen support 3 flags
+Currently Verteilen support 4 types of scenario 
 
 * No Flags
 * Setup
@@ -80,3 +80,5 @@ By the way, Verteilen currently support use Javascript VM to write the logic her
 
 ## Database
 
+The variables which use during the compute stage <br />
+You can change the variable in the compute stage as well, it will make a copy to that stage. so it's fine

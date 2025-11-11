@@ -1,0 +1,12 @@
+nav:
+  - installation.md
+  - core.md
+  - workflow.md
+  - project.md
+  - task.md
+  - database.md
+  - job.md
+  - console.md
+  - plugin.md
+  - server.md
+  - example.md

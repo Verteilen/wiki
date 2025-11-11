@@ -17,11 +17,6 @@ graph LR
     D -->|build| H((HTML))
     E -->|build| I((msi, deb Files))
     F -->|build| J((NodeJS Files))
-    style G fill:#f7d899
-    style H fill:#f7d899
-    style I fill:#f7d899
-    style J fill:#f7d899
-    style A fill:#eccafc
 ```
 
 ## Share

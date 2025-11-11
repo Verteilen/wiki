@@ -14,22 +14,22 @@ flowchart LR
 
 ## 專案
 
-The project container, you can put name and description in here, just easy to manage.
+專案容器, 你可以給予名稱跟敘述, 方便管理的資料結構
 
 ## 流程
 
-This probably the most important part, defining tasks <br />
-A project can have multiple task <br />
-Every task can have different flags <br />
-Currently Verteilen support 3 flags
+這大概是最重要的部分, 定義流程 <br />
+專案可以有多個流程 <br />
+每個流程可以有不同的設定 <br />
+目前支援 4 種設定
 
-* No Flags
-* Setup
-* Cluster
-* Multithread
+* 預設
+* 設置型
+* 分散運算
+* 多核運算
 
-!!! note "No Flag Scenario"
-    The backend will pick only one compute node, and run the task, then it will mark it as finish
+!!! note "預設場景"
+    後台會挑一台節點跑一次流程, 然後直接標記爲完成
 
 ```mermaid
 ---
@@ -52,31 +52,33 @@ flowchart LR
 
 #### 設置型
 
-You want every compute node run once
+你想要所有節點跑一次流程
 
-!!! warning "Compute Node Offline Scenario"
-    If one of the compute node is offline, backend will keep waiting for it to back online to do the task
+!!! warning "節點離線狀況"
+    如果一個節點處於離線狀態, 後台將會一直等待重新連線, 直到拿到任務回傳
 
 #### 分散運算
 
-Base on the input number, it will create a queue, and run it one by one, until all the subtask finish <br />
-Subtesk create base on the input number, if input is 5, then it will have 5 subtask create
+根據輸入的數字參數, 後台會建立清單, 一個一個運算直到全部跑完 <br />
+子流程會根據輸入的數字參數建立, 如果輸入的數字是 5, 那將會有 5 個子流程產生
 
 #### 多核運算
 
-Base on the input number, It will set the thread running upper-limit for a single compute node <br />
-If the input is 4, and if cluster flag is on as well, then a single node can run 4 subtasks at once
+根據輸入的數字參數, 運算單元會設置最高単一節點可以程載的任務上限 <br />
+如果輸入的數字是 4, 而且分散運算也打開, 那麼單一節點會同時被派送 4 個任務
 
-This is useful for low compute task such as small file converting or apply metadata for a video file
+這個選項對於低算力需求的工作很有幫助, 像是賦予影片 metadata 
 
 ## 工作
 
-The content of the task <br />
-A task can have multiple jobs
+流程的內容 <br />
+流程下可以有多個工作任務
 
-By the way, Verteilen currently support use Javascript VM to write the logic here
+順帶一提, Verteilen 目前支援 Javascript 腳本的邏輯編寫
 
 #### 表達式
 
 ## 資料庫
 
+用於運算流程的數據庫 <br />
+你也可以在運算期間變更數據內容, 後台會建立一個副本, 所以不會影響到

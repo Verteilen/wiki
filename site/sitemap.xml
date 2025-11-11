@@ -22,13 +22,6 @@
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/API/Server/Classes/WebServer/"/>
     </url>
     <url>
-        <loc>https://verteilen.github.io/wiki/DEV/core/</loc>
-        <lastmod>2025-11-11</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/DEV/core/"/>
-        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/DEV/core/"/>
-    </url>
-    <url>
         <loc>https://verteilen.github.io/wiki/DEV/installation/</loc>
         <lastmod>2025-11-11</lastmod>
         <changefreq>daily</changefreq>
@@ -41,6 +34,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/DEV/structure/"/>
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/DEV/structure/"/>
+    </url>
+    <url>
+        <loc>https://verteilen.github.io/wiki/DEV/workflow/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/DEV/workflow/"/>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/DEV/workflow/"/>
     </url>
     <url>
         <loc>https://verteilen.github.io/wiki/USER/console/</loc>
@@ -141,13 +141,6 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/API/Server/Classes/WebServer/"/>
     </url>
     <url>
-        <loc>https://verteilen.github.io/wiki/zh-TW/DEV/core/</loc>
-        <lastmod>2025-11-11</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/DEV/core/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/DEV/core/"/>
-    </url>
-    <url>
         <loc>https://verteilen.github.io/wiki/zh-TW/DEV/installation/</loc>
         <lastmod>2025-11-11</lastmod>
         <changefreq>daily</changefreq>
@@ -160,6 +153,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/DEV/structure/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/DEV/structure/"/>
+    </url>
+    <url>
+        <loc>https://verteilen.github.io/wiki/zh-TW/DEV/workflow/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/DEV/workflow/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/DEV/workflow/"/>
     </url>
     <url>
         <loc>https://verteilen.github.io/wiki/zh-TW/USER/console/</loc>

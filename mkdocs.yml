@@ -1,7 +1,7 @@
 site_name: Verteilen Documentation
 site_url: https://verteilen.github.io/wiki
-repo_name: Verteilen Wiki
-repo_url: https://github.com/Verteilen/wiki
+repo_name: Verteilen
+repo_url: https://github.com/Verteilen/verteilen
 
 extra:
   version:
@@ -74,3 +74,5 @@ plugins:
           nav_translations:
             DEV: 開發人員
             USER: 用戶指南
+            Server: 伺服器
+            Classes: 類別

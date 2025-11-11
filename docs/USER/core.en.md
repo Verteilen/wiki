@@ -8,7 +8,7 @@ You might considering horizontal scaling, which now you need a way to manage mul
 
 ## Use Blender For Example
 
-Let say there is a video file needs to export to mp4 file, video length is near 1 hour and the scene contain VFX or fluid computing
+Let say there is a blender file needs to export to mp4 file, video length is near 1 hour and the scene contain VFX or fluid computing
 
 In this case you can seperate the render to multiple fragment, 5 mins per .mp4 file <br />
 In the end, you output folder will contain multiple videos

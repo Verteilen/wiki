@@ -29,6 +29,15 @@ verteilen_node
 
 ## Cluster Install
 
+Install the nodejs module in the global for cluster <br />
+
+```bash
+# Install
+npm install -g verteilen_cluster
+# use command to start the cluster
+verteilen_cluster
+```
+
 ## Server Install
 
 Install the nodejs module in the global for compute node <br />

@@ -1,17 +1,17 @@
 # 核心概念
 
-Let say for example, you have 5 power computers, And a project so big which require days to finish its works <br />
-Such as 3D Rendering, or Video transcoding, or Large data sorting.
+假設你有 5 台強算力的電腦, 而你手上有運算作業是需要巨大算力 <br />
+算是 3D 算圖, 或是影片轉碼, 或是巨大數據庫的編排
 
-Sure, You can keep vertical scaling, until it's too expensive to do it. when you hit the critical point. <br />
-You might considering horizontal scaling, which now you need a way to manage multiple computers
+你可以繼續垂直擴展, 直到太過於昂貴之前 <br />
+你也許有想過要水平擴展, 但現在你需要一個工具去管理多台電腦
 
 ## 用 Blender 作爲範例
 
-Let say there is a video file needs to export to mp4 file, video length is near 1 hour and the scene contain VFX or fluid computing
+假設有個 blender 檔案需要輸出 mp4 影片檔案, 影片將近 1 個小時, 而且包含複雜的特效或是液體模擬運算
 
-In this case you can seperate the render to multiple fragment, 5 mins per .mp4 file <br />
-In the end, you output folder will contain multiple videos
+在這個情況, 你可以將工作分爲碎片, 每 5 分鐘輸出一個 mp4 影片檔案 <br />
+在算完時, 你的結果資料夾會有很多個 mp4 影片檔案
 
-During the renderering, you can tell multiple computers to render different timespan <br />
-Then combine them in the end
+在算圖的過程中, 你可以同時叫不同電腦算不同的時間段 <br />
+在結尾的時侯, 再把所有影片接在一起

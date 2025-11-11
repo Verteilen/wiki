@@ -28,6 +28,15 @@ verteilen_node
 
 ## 中繼節點安裝
 
+安裝 nodejs 全局插件來使用中繼節點 <br />
+
+```bash
+# 安裝
+npm install -g verteilen_cluster
+# 這指令來執行中繼節點
+verteilen_cluster
+```
+
 ## 伺服器安裝
 
 安裝 nodejs 全局插件來使用伺服器 <br />

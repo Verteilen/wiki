@@ -4,71 +4,64 @@
 
 流程介面的位置
 
-<img style="width:25%" src="./../../../static/TaskPage.png" />
+<img style="width:50%" src="./../../../static/task/TaskPage.png" />
 
-Toolbar layout
+在這個頁面, 你可以透過工具列完成所有動作
 
-<img style="width:100%" src="./../../../static/TaskPage2.png" />
+* 新增流程
+* 匯出流程
+* 其他...
 
-## Add New Task
+<img style="width:100%" src="./../../../static/task/TaskPage2.png" />
 
-Click button to add task
+## 新增流程
 
-<img style="width:100%" src="./../../../static/AddTask.png" />
+按下新增按鈕 新增流程
 
-As you can see, you must enter the name, otherwise the menu will not accept
+<img style="width:100%" src="./../../../static/task/AddTask.png" />
 
-<img style="width:50%" src="./../../../static/AddTask2.png" />
+你必須輸入名稱, 否則不會接受
 
-<img style="width:50%" src="./../../../static/AddTask3.png" />
+<img style="width:50%" src="./../../../static/task/AddTask2.png" />
 
-You can choose it to be setup job type <br />
-Which it's the task run in every nodes once
+<img style="width:50%" src="./../../../static/task/AddTask3.png" />
 
-<img style="width:50%" src="./../../../static/AddTask4.png" />
+你可以選擇流程的執行模式, 透過下拉式選單選取
 
-Or you can choose distribute, which let this be a cronjob type <br />
-It will generate a number of subtask that use every nodes to finish it
+<img style="width:50%" src="./../../../static/task/AddTask4.png" />
 
-!!! Warning "Execute Order"
-    No It does not have order like, first node run first job, second node run second job <br />
-    As long as the node finish the current subtask, it will fetch the next unfinish subtask <br />
-    It run as quickly as possible
+你可以選擇分散運算模式 <br />
+執行階段會生成多個子流程
 
-<img style="width:50%" src="./../../../static/AddTask5.png" />
-<img style="width:50%" src="./../../../static/AddTask6.png" />
+<img style="width:50%" src="./../../../static/task/AddTask5.png" />
 
-With multicore checked, One node can have multiple subtask execute at the same time
+!!! Warning "執行順序"
+    執行的節點並沒有任何順序可言 <br />
+    任何節點只要完成任務, 就會去找下一個子流程執行
 
-!!! Warning "Compute Heavy"
-    If your task have cpu or gpu heavy compute task <br />
-    We recommand you not to check this <br />
-    It should be use on the lightweight task such as transcoding or formating json etc...
+多核心模式, 單一節點可以同時跑多個子流程
 
-<img style="width:50%" src="./../../../static/AddTask7.png" />
+<img style="width:50%" src="./../../../static/task/AddTask6.png" />
 
-New update 
+!!! Warning "高需求算力任務"
+    如果你的流程內容含有 cpu 或是 gpu 高算力需求 <br />
+    推薦你使用分散運算, 不要使用多核心
 
-* Decide that the display should change to single row, It's eaiser to read
+## 綁定
 
-<img style="width:50%" src="./../../../static/AddTask8.png" />
+專案綁定的資料庫, 方便於執行階段建立 <br />
+你可以留空, 執行階段再選擇資料庫
 
+* 按左側進入資料庫頁面
+* 按選擇, 選擇其他資料庫綁定
 
-## Binding
+<img style="width:100%" src="./../../../static/task/Binding.png" />
 
-It's a project binding parameter, It's just a default binding to a data vault <br />
-You can actually leave this empty, You can assign it in the console page as well
+* 按 None 取消綁定
+* 按其他資料庫綁定
 
-* Click green text to jump to parameter setting menu <br />
-* Click dotted box to select other parameter
+<img style="width:60%" src="./../../../static/task/Binding2.png" />
 
-<img style="width:60%" src="./../../../static/Binding.png" />
+如果你專案沒有綁定, 看起來會是像這樣子
 
-* Click None to unbind
-* Click other to change binding
-
-<img style="width:60%" src="./../../../static/Binding2.png" />
-
-This is what you see when project is binding to nothing
-
-<img style="width:60%" src="./../../../static/Binding3.png" />
+<img style="width:60%" src="./../../../static/task/Binding3.png" />

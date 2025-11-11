@@ -4,7 +4,7 @@
 
 <img style="width:35%" src="./../static/icon.png" />
 
-Verteilen 使一套題耕親和使用者介面的分散運算軟體
+Verteilen 使一套擁有親和使用者介面的分散運算軟體
 
 ### 應用程式資訊
 

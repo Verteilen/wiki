@@ -1,71 +1,241 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-         <loc>https://verteilen.github.io/wiki/</loc>
-         <lastmod>2025-11-11</lastmod>
+        <loc>https://verteilen.github.io/wiki/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/"/>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/"/>
     </url>
     <url>
-         <loc>https://verteilen.github.io/wiki/api/server/Server/</loc>
-         <lastmod>2025-11-11</lastmod>
+        <loc>https://verteilen.github.io/wiki/API/Server/Classes/Server./</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/API/Server/Classes/Server./"/>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/API/Server/Classes/Server./"/>
     </url>
     <url>
-         <loc>https://verteilen.github.io/wiki/api/server/WebServer/</loc>
-         <lastmod>2025-11-11</lastmod>
+        <loc>https://verteilen.github.io/wiki/API/Server/Classes/WebServer/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/API/Server/Classes/WebServer/"/>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/API/Server/Classes/WebServer/"/>
     </url>
     <url>
-         <loc>https://verteilen.github.io/wiki/dev/core/</loc>
-         <lastmod>2025-11-11</lastmod>
+        <loc>https://verteilen.github.io/wiki/DEV/core/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/DEV/core/"/>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/DEV/core/"/>
     </url>
     <url>
-         <loc>https://verteilen.github.io/wiki/dev/installation/</loc>
-         <lastmod>2025-11-11</lastmod>
+        <loc>https://verteilen.github.io/wiki/DEV/installation/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/DEV/installation/"/>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/DEV/installation/"/>
     </url>
     <url>
-         <loc>https://verteilen.github.io/wiki/dev/structure/</loc>
-         <lastmod>2025-11-11</lastmod>
+        <loc>https://verteilen.github.io/wiki/DEV/structure/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/DEV/structure/"/>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/DEV/structure/"/>
     </url>
     <url>
-         <loc>https://verteilen.github.io/wiki/user/console/</loc>
-         <lastmod>2025-11-11</lastmod>
+        <loc>https://verteilen.github.io/wiki/USER/console/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/USER/console/"/>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/USER/console/"/>
     </url>
     <url>
-         <loc>https://verteilen.github.io/wiki/user/core/</loc>
-         <lastmod>2025-11-11</lastmod>
+        <loc>https://verteilen.github.io/wiki/USER/core/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/USER/core/"/>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/USER/core/"/>
     </url>
     <url>
-         <loc>https://verteilen.github.io/wiki/user/example/</loc>
-         <lastmod>2025-11-11</lastmod>
+        <loc>https://verteilen.github.io/wiki/USER/example/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/USER/example/"/>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/USER/example/"/>
     </url>
     <url>
-         <loc>https://verteilen.github.io/wiki/user/installation/</loc>
-         <lastmod>2025-11-11</lastmod>
+        <loc>https://verteilen.github.io/wiki/USER/installation/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/USER/installation/"/>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/USER/installation/"/>
     </url>
     <url>
-         <loc>https://verteilen.github.io/wiki/user/job/</loc>
-         <lastmod>2025-11-11</lastmod>
+        <loc>https://verteilen.github.io/wiki/USER/job/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/USER/job/"/>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/USER/job/"/>
     </url>
     <url>
-         <loc>https://verteilen.github.io/wiki/user/parameter/</loc>
-         <lastmod>2025-11-11</lastmod>
+        <loc>https://verteilen.github.io/wiki/USER/parameter/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/USER/parameter/"/>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/USER/parameter/"/>
     </url>
     <url>
-         <loc>https://verteilen.github.io/wiki/user/plugin/</loc>
-         <lastmod>2025-11-11</lastmod>
+        <loc>https://verteilen.github.io/wiki/USER/plugin/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/USER/plugin/"/>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/USER/plugin/"/>
     </url>
     <url>
-         <loc>https://verteilen.github.io/wiki/user/project/</loc>
-         <lastmod>2025-11-11</lastmod>
+        <loc>https://verteilen.github.io/wiki/USER/project/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/USER/project/"/>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/USER/project/"/>
     </url>
     <url>
-         <loc>https://verteilen.github.io/wiki/user/server/</loc>
-         <lastmod>2025-11-11</lastmod>
+        <loc>https://verteilen.github.io/wiki/USER/server/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/USER/server/"/>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/USER/server/"/>
     </url>
     <url>
-         <loc>https://verteilen.github.io/wiki/user/task/</loc>
-         <lastmod>2025-11-11</lastmod>
+        <loc>https://verteilen.github.io/wiki/USER/task/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/USER/task/"/>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/USER/task/"/>
     </url>
     <url>
-         <loc>https://verteilen.github.io/wiki/user/workflow/</loc>
-         <lastmod>2025-11-11</lastmod>
+        <loc>https://verteilen.github.io/wiki/USER/workflow/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/USER/workflow/"/>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/USER/workflow/"/>
+    </url>
+    <url>
+        <loc>https://verteilen.github.io/wiki/zh-TW/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/"/>
+    </url>
+    <url>
+        <loc>https://verteilen.github.io/wiki/zh-TW/API/Server/Classes/Server./</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/API/Server/Classes/Server./"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/API/Server/Classes/Server./"/>
+    </url>
+    <url>
+        <loc>https://verteilen.github.io/wiki/zh-TW/API/Server/Classes/WebServer/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/API/Server/Classes/WebServer/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/API/Server/Classes/WebServer/"/>
+    </url>
+    <url>
+        <loc>https://verteilen.github.io/wiki/zh-TW/DEV/core/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/DEV/core/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/DEV/core/"/>
+    </url>
+    <url>
+        <loc>https://verteilen.github.io/wiki/zh-TW/DEV/installation/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/DEV/installation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/DEV/installation/"/>
+    </url>
+    <url>
+        <loc>https://verteilen.github.io/wiki/zh-TW/DEV/structure/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/DEV/structure/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/DEV/structure/"/>
+    </url>
+    <url>
+        <loc>https://verteilen.github.io/wiki/zh-TW/USER/console/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/USER/console/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/USER/console/"/>
+    </url>
+    <url>
+        <loc>https://verteilen.github.io/wiki/zh-TW/USER/core/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/USER/core/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/USER/core/"/>
+    </url>
+    <url>
+        <loc>https://verteilen.github.io/wiki/zh-TW/USER/example/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/USER/example/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/USER/example/"/>
+    </url>
+    <url>
+        <loc>https://verteilen.github.io/wiki/zh-TW/USER/installation/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/USER/installation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/USER/installation/"/>
+    </url>
+    <url>
+        <loc>https://verteilen.github.io/wiki/zh-TW/USER/job/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/USER/job/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/USER/job/"/>
+    </url>
+    <url>
+        <loc>https://verteilen.github.io/wiki/zh-TW/USER/parameter/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/USER/parameter/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/USER/parameter/"/>
+    </url>
+    <url>
+        <loc>https://verteilen.github.io/wiki/zh-TW/USER/plugin/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/USER/plugin/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/USER/plugin/"/>
+    </url>
+    <url>
+        <loc>https://verteilen.github.io/wiki/zh-TW/USER/project/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/USER/project/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/USER/project/"/>
+    </url>
+    <url>
+        <loc>https://verteilen.github.io/wiki/zh-TW/USER/server/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/USER/server/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/USER/server/"/>
+    </url>
+    <url>
+        <loc>https://verteilen.github.io/wiki/zh-TW/USER/task/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/USER/task/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/USER/task/"/>
+    </url>
+    <url>
+        <loc>https://verteilen.github.io/wiki/zh-TW/USER/workflow/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://verteilen.github.io/wiki/zh-TW/USER/workflow/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://verteilen.github.io/wiki/USER/workflow/"/>
     </url>
 </urlset>

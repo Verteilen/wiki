@@ -489,6 +489,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Database
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -500,6 +513,70 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#views" class="md-nav__link">
+    <span class="md-ellipsis">
+      Views
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add Database
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#select-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      Select Database
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add Variable
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#expression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expression
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -945,6 +1022,59 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#views" class="md-nav__link">
+    <span class="md-ellipsis">
+      Views
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add Database
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#select-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      Select Database
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add Variable
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#expression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expression
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -963,6 +1093,45 @@
 
 
 <h1 id="database">Database</h1>
+<p>A variables holder container, User can modify them during the compute stage as well.</p>
+<h2 id="views">Views</h2>
+<p>The database page location</p>
+<p><img style="width:50%" src="./../../static/database/DatabasePage.png" /></p>
+<p>In this page, you can do everything in the action bar</p>
+<ul>
+<li>Added database</li>
+<li>Export database</li>
+<li>Added Variable</li>
+<li>etc...</li>
+</ul>
+<p><img style="width:100%" src="./../../static/database/DatabasePage2.png" /></p>
+<h2 id="add-database">Add Database</h2>
+<p>Click top left corner for creating a new database</p>
+<p><img style="width:50%" src="./../../static/database/NewDatabase.png" /></p>
+<p>You must enter name to create <br />
+You can also apply template for the database</p>
+<p><img style="width:50%" src="./../../static/database/NewDatabase2.png" /></p>
+<p>Click the template in the group and hit confirm</p>
+<p><img style="width:50%" src="./../../static/database/NewDatabase3.png" /></p>
+<p>The button text will change to current select template</p>
+<p><img style="width:50%" src="./../../static/database/NewDatabase4.png" /></p>
+<h2 id="select-database">Select Database</h2>
+<p>Click the database name for select another database</p>
+<p><img style="width:50%" src="./../../static/database/SelectDatabase.png" /></p>
+<h2 id="add-variable">Add Variable</h2>
+<p>Click top right corner for creating a new variable</p>
+<p><img style="width:50%" src="./../../static/database/NewVariable.png" /></p>
+<p>You must enter name to create</p>
+<p><img style="width:50%" src="./../../static/database/NewVariable2.png" /></p>
+<p>You can select different datatype for the variable you are about to create</p>
+<p><img style="width:50%" src="./../../static/database/NewVariable3.png" /></p>
+<p>This is the special datatype, the detail is in the next section</p>
+<p><img style="width:50%" src="./../../static/database/NewVariable4.png" /></p>
+<h2 id="expression">Expression</h2>
+<p>Checkout <a href="https://www.npmjs.com/package/expressionparser">Expression</a> for language details</p>
+<p>Expression is execute during the compute stage, The value here is expression string, which is not the result yet <br />
+In this case the expression will be 4 + 9999, then it will return 10003 and store in e1 variable container</p>
+<p><img style="width:100%" src="./../../static/database/Expression.png" /></p>
 
 
 

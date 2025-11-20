@@ -74,76 +74,143 @@ graph LR
 
 ### 靜態網頁
 
-Simple task management host by browser, which it close when user close browser <br />
-It's unreliable you could said, But easy deploy
+```mermaid
+---
+title: 大綱
+---
+graph TD
+    A[部署伺服器]
+    B[客戶端 瀏覽器]
+    C[節點]
+    D[中繼節點]
+    A --> B
+    B --> C
+    B --> D
+    D --> C
+```
+
+由瀏覽器架設的工作排序管理程式, 當瀏覽器關閉自動結束 <br />
+十分不穩定, 但是很容易架設簡單
 
 Notices:
 
-- [ ] Backend
-- [ ] Playground
-- [ ] Authentication
+- [ ] 後端
+- [ ] 腳本運作環境
+- [ ] 認證
 
-!!! info "Source code location"
-    It's locate at [Verteilen](https://github.com/Verteilen/Verteilen) <br />
-    Currently official Github page repository is [Here]([Static-Web](https://github.com/Verteilen/.github))
+!!! info "原始碼位置"
+    位於 [Verteilen](https://github.com/Verteilen/Verteilen) <br />
+    Github Page 的預覽位於 [這裡]([Static-Web](https://github.com/Verteilen/.github))
 
-!!! message "Build html"
-    Use command below to use vite package the renderer to html files
+!!! message "建置 html"
+    使用以下指令建置 html 檔案
     ```bash
-    # Output html files
+    # 輸出 html 檔案
     npm run build:web
     ```
-    The output will locate at ./build/renderer folder
+    輸出檔案位於 ./build/renderer 資料夾
 
-### Electron Application
+### Electron 桌面應用
+
+```mermaid
+---
+title: 大綱
+---
+graph TD
+    A[Main]
+    B[Renderer]
+    C[代理]
+    D[[其他後端]]
+    E[[節點]]
+    F[中繼節點]
+    G[伺服器]
+    A <--> C
+    C <-->|Electron| B
+    C <-->|URL| D
+    A --> G
+    G --> E
+    G --> F
+    F --> E
+```
+
+#### [代理](../API/Common/Classes/Proxy.zh-TW.md)
+
+與後台溝通的代理物件, 根據目前的 [配置](../API/Common/Type/AppConfig.zh-TW.md)
+
+#### Main
+
+Electron 的桌面應用後端
+
+#### Renderer
+
+這個 renderer 的內容將會共享到其他專案使用
+
+#### 伺服器
+
+Verteilen 伺服器實體
 
 Notices:
 
-- [x] Backend
-- [x] Playground
-- [ ] Authentication
+- [x] 後端
+- [x] 腳本運作環境
+- [ ] 認證
 
-!!! info "Source code path location"
-    Frontend locate at src/renderer <br />
-    Backend locate at src/main
+!!! info "原始碼位置"
+    位於 [Verteilen](https://github.com/Verteilen/Verteilen) <br />
+    前端位於 src/renderer 資料夾 <br />
+    後端位於 at src/main 資料夾
 
-!!! message "Build electron"
-    Use command below to package the electron app to installation files
+!!! message "建置 electron"
+    使用以下指令建置安裝檔
     ```bash
-    # Build electron app depend on current os
+    # 建置 根據目前作業系統
     npm run build
-    # Build electron app which run on windows (.msi)
+    # 建置 windows (.msi)
     npm run build:win
-    # Build electron app which run on mac
+    # 建置 mac
     npm run build:mac
-    # Build electron app which run on linux (.deb)
+    # 建置 linux (.deb)
     npm run build:linux
     ```
-    The output will locate at ./dist folder
+    輸出檔案位於 ./dist 資料夾
 
-### Express Server
+### Express 網頁後端
+
+```mermaid
+---
+title: 大綱
+---
+graph TD
+    A[伺服器]
+    B[庫戶端瀏覽器]
+    C[節點]
+    D[中繼節點]
+    A --> B
+    A --> C
+    A --> D
+    D --> C
+```
 
 Notices:
 
-- [x] Backend
-- [x] Playground
-- [x] Authentication
+- [x] 後端
+- [x] 腳本運作環境
+- [x] 認證
 
-It's nodejs express server which hosting the backend
+一個由 NodeJS Express 網頁後端架設的伺服器
 
-!!! info "Source code path location"
-    Frontend locate at src/renderer
-    Backend locate at src/server
+!!! info "原始碼位置"
+    連結附上於 [Verteilen-Server](https://github.com/Verteilen/Verteilen-Server)
 
-!!! message "Build express"
-    Use command below to package the express to nodejs deploy files
+!!! message "建置 express"
+    使用以下指令輸出 nodejs 檔案
     ```bash
-    # Output nodejs files
+    # 輸出 nodejs 檔案
     npm run build:server
     ```
-    The output will locate at ./build/server folder
+    輸出檔案位於 ./build/server 資料夾
 
-### Compute Node
+### 運算節點
 
 It's the client side application, it recevied server signal and do the calculation then return the info etc... <br />
 It runs without user interface
@@ -160,4 +227,4 @@ It runs without user interface
     The output will locate at ./build/node folder
 
 
-### Cluster
+### 中繼節點

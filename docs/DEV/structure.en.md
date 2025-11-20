@@ -74,6 +74,21 @@ This program is called by runner. In order to implement multithread logic in Nod
 
 ### Static Web
 
+```mermaid
+---
+title: overview
+---
+graph TD
+    A[Hosting Server]
+    B[Client Browser]
+    C[Nodes]
+    D[Cluster]
+    A --> B
+    B --> C
+    B --> D
+    D --> C
+```
+
 Simple task management host by browser, which it close when user close browser <br />
 It's unreliable you could said, But easy deploy
 
@@ -97,6 +112,43 @@ Notices:
 
 ### Electron Application
 
+```mermaid
+---
+title: overview
+---
+graph TD
+    A[Main]
+    B[Renderer]
+    C[Proxy]
+    D[[Other Backends]]
+    E[[Nodes]]
+    F[Cluster]
+    G[Server]
+    A <--> C
+    C <-->|Electron| B
+    C <-->|URL| D
+    A --> G
+    G --> E
+    G --> F
+    F --> E
+```
+
+#### [Proxy](../API/Common/Classes/Proxy.en.md)
+
+It's a way to communicate with backend, depends on the current [application configuration](../API/Common/Type/AppConfig.en.md)
+
+#### Main
+
+Electron desktop application backend
+
+#### Renderer
+
+This renderer will be sharing with other project
+
+#### Server
+
+Verteilen server instance
+
 Notices:
 
 - [x] Backend
@@ -104,6 +156,7 @@ Notices:
 - [ ] Authentication
 
 !!! info "Source code path location"
+    It's locate at [Verteilen](https://github.com/Verteilen/Verteilen) <br />
     Frontend locate at src/renderer <br />
     Backend locate at src/main
 
@@ -123,6 +176,21 @@ Notices:
 
 ### Express Server
 
+```mermaid
+---
+title: overview
+---
+graph TD
+    A[Server]
+    B[Client Browser]
+    C[Nodes]
+    D[Cluster]
+    A --> B
+    A --> C
+    A --> D
+    D --> C
+```
+
 Notices:
 
 - [x] Backend
@@ -132,8 +200,7 @@ Notices:
 It's nodejs express server which hosting the backend
 
 !!! info "Source code path location"
-    Frontend locate at src/renderer
-    Backend locate at src/server
+    It's locate at [Verteilen-Server](https://github.com/Verteilen/Verteilen-Server)
 
 !!! message "Build express"
     Use command below to package the express to nodejs deploy files
